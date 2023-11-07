@@ -81,10 +81,12 @@ export const TabButton = (props: ITabButtonProps) => {
         return false;
     };
 
-    const onClose = (event: React.MouseEvent<HTMLDivElement>) => {
+    const onClose = (event) => {
         if (isClosable()) {
-            layout.doAction(Actions.deleteTab(node.getId()));
-        } else {
+            layout.doAction(Actions_1.Actions.deleteTab(node.getId()));
+            node.onClose()
+        }
+        else {
             onClick();
         }
     };
