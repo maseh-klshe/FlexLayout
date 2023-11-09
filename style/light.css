@@ -49,8 +49,8 @@
 }
 
 .flexlayout__layout {
-  left: 0;
-  top: 0;
+  left: 60;
+  top: 65;
   right: 0;
   bottom: 0;
   position: absolute;
