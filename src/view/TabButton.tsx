@@ -84,7 +84,6 @@ export const TabButton = (props: ITabButtonProps) => {
     const onClose = (event) => {
         if (isClosable()) {
             layout.doAction(Actions_1.Actions.deleteTab(node.getId()));
-            node.onClose()
         }
         else {
             onClick();
